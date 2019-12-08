@@ -1,0 +1,35 @@
+h1:hover{
+    background-color: yellow ;
+}
+
+button:hover{
+    color: white ;
+}
+
+/* Doesnt work on safari but works on chrome */
+button:focus{
+    border-radius: 10px ;
+    background-color: red ;
+}
+
+button:active {
+    background-color: orange ;
+    font-size: 20px ;
+}
+
+input:hover{
+    background-color: aquamarine ;
+}
+
+input:focus{
+    background-color: chartreuse ;
+}
+
+p:active {
+    color: yellow ;
+}
+
+/* never use focus on these as elements parsed by a tab key are only said to be focused */
+h1:focus {
+    color : purple ;
+}
