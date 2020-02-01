@@ -1,0 +1,42 @@
+.box{
+    background: #9b59b6;
+  height: 100px;
+  width: 100px;
+  line-height:100px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.a1{
+    transition-duration: 0.3s ;
+    transform-origin: top right ;
+}
+
+.box:hover{
+    background-color: rgb(211, 12, 12) ;
+    transform: scale(2) rotate(-45deg) ;
+    opacity: 0.5 ;
+    border-radius: 50px ;
+}
+
+.a2{
+    transition-property: border-radius, opacity, background-color ;
+    transition-duration: 1s, 5s, 3s ;
+    transform-origin: top right ;
+}
+
+.a3{
+    transition-property: border-radius, opacity, background-color ;
+    transition-duration: 1s, 5s, 3s ;
+    transform-origin: top right ;
+    /* transition-delay: 5s, 10s, 1s ; */
+}
+
+.a4{
+    transition-property: border-radius, opacity, background-color ;
+    transition-duration: 1s, 5s, 3s ;
+    transform-origin: top right ;
+    transition-timing-function: ease-in-out ;
+}

@@ -1,0 +1,40 @@
+p.divpara1 {
+    height: 50px ;
+    width: 50px ; 
+    background-color: red ;
+}
+
+p.divpara2 {
+    height: 50px ;
+    width: 50px ; 
+    background-color: green ;
+}
+
+p.divpara3 {
+    height: 50px ;
+    width: 50px ; 
+    background-color: blue ;
+}
+
+p.divpara4 {
+    height: 50px ;
+    width: 50px ; 
+    background-color: yellowgreen ;
+}
+
+.divpara1:hover {
+    transform: translate(100px, 50px) ;
+}
+
+.divpara2:hover {
+    transform: scale(2) translate(60px, 60px) ;
+}
+
+.divpara3:hover {
+    transform: scale(2) ;
+}
+
+.divpara4:hover {
+    transform: rotate(45deg) ;
+    transition-duration: 1000ms ;
+}
