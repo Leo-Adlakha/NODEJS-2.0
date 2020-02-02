@@ -1,0 +1,48 @@
+html, body{
+    margin: 0 ;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    width: 400px ;
+    margin: 0;
+    padding: 0 ;
+    color: white;
+    display: block;
+}
+
+.mini-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: 28%;
+    padding-top: 2%;
+}
+
+.mini-container-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: 70%; 
+    justify-content: flex-end;
+}
+
+.menu-option{
+    height: 50px;
+    width: 90%;
+    font-size: 30px;
+    padding-left: 10%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.menu-option:hover{
+    background-color: rgb(115, 157, 235);
+    transition-duration: 0.5s;
+}

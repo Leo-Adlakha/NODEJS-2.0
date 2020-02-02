@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    border: 5px solid black;
+    flex-wrap: wrap;
+    height: 300px ;
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* justify-content: first baseline;  */
+
+}
+
+.box{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    width: 300px ;
+}
+
+.box:nth-child(odd){
+    background-color: aquamarine;
+}
+
+.box:nth-child(even){
+    background-color: bisque;
+}

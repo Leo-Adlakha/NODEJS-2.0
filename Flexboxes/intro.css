@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    border: 5px solid black;
+    flex-wrap: wrap;
+    height: 300px ;
+}
+
+.box{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    width: 300px ;
+}
+
+.box:nth-child(odd){
+    background-color: aquamarine;
+}
+
+.box:nth-child(even){
+    background-color: bisque;
+}
