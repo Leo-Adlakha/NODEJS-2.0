@@ -1,32 +1,50 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
 .container{
     display: flex;
-    /* flex-direction: row; */
-    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: column; */
     /* flex-direction: row-reverse; */
     /* flex-direction: column-reverse; */
     border: 5px solid black;
     flex-wrap: wrap;
-    height: 300px ;
+    height: 800px ;
     /* justify-content: center; */
     /* justify-content: flex-end; */
     /* justify-content: space-evenly; */
     /* justify-content: space-around; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* justify-content: first baseline;  */
-
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+    align-items: stretch;            /* default value */ 
+    height: 100vh;
+    /* align-content: flex-start ; */
+    /* align-content: flex-end ; */
+    align-content: center ;
+    /* align-content: stretch ; */
+    /* align-content: space-around ; */
+    /* align-content: space-between ; */
 }
 
 .box{
     text-align: center;
     font-size: 50px;
     color: black;
-    width: 300px ;
+    /* width: 100px ; */
+    color: white;
+    width: 20% ;
 }
 
 .box:nth-child(odd){
-    background-color: aquamarine;
+    background-color: rgb(30, 194, 142);
 }
 
 .box:nth-child(even){
-    background-color: bisque;
+    background-color: rgb(231, 143, 36);
 }
