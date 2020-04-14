@@ -1,9 +1,12 @@
 .container{
     display: flex;
     /* flex-direction: row; */
-    flex-direction: column;
+    flex-direction: row;
     /* flex-direction: row-reverse; */
     /* flex-direction: column-reverse; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    align-content: space-around;
     border: 5px solid black;
     flex-wrap: wrap;
     height: 300px ;
