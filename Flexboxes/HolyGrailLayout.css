@@ -1,0 +1,46 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    background-color: #00FF7F;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+header a{
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    height: 500px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+article{
+    background-color: aqua;
+    order: 2;
+    /* flex-grow: 3; */
+    flex-basis: 300px;
+    justify-content: center;
+}
+
+nav{
+    background-color: aquamarine;
+}
+
+aside{
+    background-color: azure;
+    order: 3;
+}
+
+footer{
+    background-color: cadetblue;
+    height: 200px;
+}

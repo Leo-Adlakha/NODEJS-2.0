@@ -1,0 +1,42 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px black solid;
+    flex-direction: column;
+    height: 800px;
+}
+
+.box{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    color: white;
+    /* width: 50px; */
+    box-sizing: border-box;
+    flex-basis: 80px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* shorthand for above */
+    /* flex: 1 1 80px; */
+}
+
+.b2{
+    flex-grow: 5;
+}
+
+.b3{
+    flex-shrink: 10;
+}
+
+.box:nth-child(odd){
+    background-color: rgb(30, 194, 142);
+}
+
+.box:nth-child(even){
+    background-color: rgb(231, 143, 36);
+}
