@@ -1,0 +1,101 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    font-family: normal Quicksand;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-links a{
+    padding: 10px;
+}
+
+.head-content a{
+    padding-left: 10px;
+    color: white;
+}
+
+.head-container{
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    flex-basis: 1000px;
+}
+
+.head-container nav a{
+    /* color: white; */
+    text-decoration: none;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    animation: head-animation 0.7s ease-in;
+}
+
+h1{
+    font-size: 80px;
+    font-family: Quicksand;
+    font-weight: 700;
+    color: white;
+    margin-top: 17%;
+    margin-bottom: 0;
+}
+
+.head h3{
+    font-size: 35px;
+    font-family: Quicksand;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.head a{
+    text-decoration: none;
+    background-color: royalblue;
+    color: white;
+    padding: 20px 25px 15px 65px;
+    border-radius: 10px;
+    width: 300px;
+    height:45px;
+    text-transform: uppercase;
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 20px 80px 20px 80px;
+    font-size: 25px;
+    font-family: Quicksand;
+    animation: navbar-animation 0.7s ease-in;
+}
+
+@keyframes navbar-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes head-animation{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,6 +1,10 @@
 html, body{
     margin: 0;
-    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -18,29 +22,37 @@ header a{
 
 main{
     display: flex;
-    height: 500px;
-    flex-basis: 200px;
-    flex-grow: 1;
+    height: 800px;
 }
 
 article{
     background-color: aqua;
     order: 2;
-    /* flex-grow: 3; */
-    flex-basis: 300px;
+    flex: 10 1 200px;
     justify-content: center;
 }
 
 nav{
+    flex: 1 20 100px;
     background-color: aquamarine;
 }
 
 aside{
+    flex: 1 20 100px;
     background-color: azure;
     order: 3;
 }
 
 footer{
     background-color: cadetblue;
-    height: 200px;
+    flex-basis: 200px;
+}
+
+@media screen and (max-width: 680px){
+    main{
+        flex-direction: column;
+    }
+    article{
+        order: 0;
+    }
 }
